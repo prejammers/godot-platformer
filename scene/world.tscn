@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxnwli5lenjfn"]
+
+[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_3bwms"]
+size = Vector2(1000, 150)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yse2c"]
+size = Vector2(1000, 150)
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_aew1j")]
+position = Vector2(478, 442)
+
+[node name="Platform" type="StaticBody2D" parent="."]
+position = Vector2(576, 576)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+position = Vector2(2.08165e-12, 2.08165e-12)
+mesh = SubResource("QuadMesh_3bwms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+shape = SubResource("RectangleShape2D_yse2c")
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+position = Vector2(1664, 320)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform2"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+position = Vector2(2.08165e-12, 2.08165e-12)
+mesh = SubResource("QuadMesh_3bwms")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+shape = SubResource("RectangleShape2D_yse2c")
