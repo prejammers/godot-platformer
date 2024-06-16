@@ -10,9 +10,13 @@ config_version=5
 
 [application]
 
-
+run/main_scene="res://scene/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="UnnamedProject"
 
 [input]
 
