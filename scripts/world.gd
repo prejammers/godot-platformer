@@ -2,7 +2,6 @@ extends Node2D
 
 func game_over():
 	pass
-	pass
 
 func new_game():
 	pass
