@@ -10,6 +10,7 @@ size = Vector2(128, 273)
 script = ExtResource("1_evnxh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
 position = Vector2(0, -136)
 scale = Vector2(1, 2.15234)
 texture = ExtResource("1_ynbo7")
@@ -19,4 +20,5 @@ position = Vector2(0, -136)
 shape = SubResource("RectangleShape2D_3voon")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-8, -200)
+position = Vector2(2.08165e-12, -100)
+position_smoothing_enabled = true
