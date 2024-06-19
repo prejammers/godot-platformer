@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var speed = 300
-@export var gravity = 30
-@export var jump_force = 1000
+@export var speed = 500
+@export var gravity = 50
+@export var jump_force = 1800
 @onready var pause_menu = $Camera2D/Pause_Menu
 @onready var level_select = $"Camera2D/Level Select"
 var paused = false
