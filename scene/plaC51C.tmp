@@ -41,6 +41,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Level Select" parent="Camera2D" instance=ExtResource("4_5jd1q")]
+visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0
@@ -55,7 +56,6 @@ size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-visible = false
 position = Vector2(192, -433)
 scale = Vector2(-200.08, -219.775)
 mesh = SubResource("QuadMesh_jyn2x")
