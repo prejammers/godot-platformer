@@ -29,7 +29,6 @@ position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 
 [node name="Pause_Menu" parent="Player/Camera2D2" instance=ExtResource("3_ygyix")]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -43,8 +42,8 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="background" type="MeshInstance2D" parent="Player/Camera2D2"]
-modulate = Color(0.0784314, 0, 0.792157, 1)
-self_modulate = Color(0.0782461, 0, 0.790355, 1)
+modulate = Color(0.130028, 6.85888e-07, 0.656816, 1)
+self_modulate = Color(0.127784, 5.09029e-06, 0.57463, 1)
 z_index = -100
 z_as_relative = false
 position = Vector2(478, -38.0001)
