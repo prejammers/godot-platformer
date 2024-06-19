@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://bpb088hs13n02" path="res://scene/levels/test_level.tscn" id="3_vm554"]
+[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="3_2t2et"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
 
@@ -12,9 +12,6 @@ script = ExtResource("1_gkxe2")
 [node name="Player" parent="." instance=ExtResource("1_aew1j")]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(512, 448)
-speed = 500
-gravity = 50
-jump_force = 1800
 
 [node name="background" type="MeshInstance2D" parent="Player"]
 modulate = Color(0.0784314, 0, 0.792157, 1)
@@ -25,4 +22,5 @@ position = Vector2(0, -512)
 scale = Vector2(3072, 1856)
 mesh = SubResource("QuadMesh_dfpqx")
 
-[node name="TestLevel" parent="." instance=ExtResource("3_vm554")]
+[node name="Platform" parent="." instance=ExtResource("3_2t2et")]
+position = Vector2(512, 576)
