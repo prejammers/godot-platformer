@@ -36,7 +36,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="Level Select" parent="Camera2D" instance=ExtResource("4_5jd1q")]
-visible = false
 anchors_preset = 0
 anchor_right = 0.0
 anchor_bottom = 0.0

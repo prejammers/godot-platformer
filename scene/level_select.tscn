@@ -1,15 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://bn022yv7qrljc"]
 
-[ext_resource type="Script" path="res://scene/level_select.gd" id="1_ex8jt"]
+[ext_resource type="Script" path="res://scripts/level_select.gd" id="1_xt8ph"]
 
 [node name="Level Select" type="Control"]
+z_index = 100
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ex8jt")
+script = ExtResource("1_xt8ph")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -28,3 +29,6 @@ text = "Test Level 1"
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "Test Level 2"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Test Level 1" to="." method="_on_test_level_1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Test Level 2" to="." method="_on_test_level_2_pressed"]

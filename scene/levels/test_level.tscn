@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bpb088hs13n02"]
+[gd_scene load_steps=8 format=3 uid="uid://bpb088hs13n02"]
 
+[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_ee6dv"]
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_n01at"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/level_blocks/bridge_segment.tscn" id="2_a1erx"]
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="3_8wofq"]
@@ -9,9 +10,6 @@
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
 [node name="TestLevel" type="Node2D"]
-
-[node name="Platform" parent="." instance=ExtResource("1_n01at")]
-position = Vector2(512, 576)
 
 [node name="Platform2" parent="." instance=ExtResource("1_n01at")]
 position = Vector2(1536, 576)
@@ -138,8 +136,8 @@ position = Vector2(9856, 576)
 [node name="Bridge_Segment5" parent="." instance=ExtResource("2_a1erx")]
 position = Vector2(10368, 576)
 
-[node name="Bridge_Segment7" parent="." instance=ExtResource("2_a1erx")]
-position = Vector2(10368, -192)
+[node name="Bridge_Segment7" parent="Bridge_Segment5" instance=ExtResource("2_a1erx")]
+position = Vector2(0, -768)
 
 [node name="Bridge_Segment8" parent="." instance=ExtResource("2_a1erx")]
 position = Vector2(10368, 64)
@@ -197,3 +195,12 @@ position = Vector2(1920, 1280)
 
 [node name="Platform43" parent="." instance=ExtResource("5_0a4j5")]
 position = Vector2(1408, 1280)
+
+[node name="Platform" parent="." instance=ExtResource("1_n01at")]
+position = Vector2(512, 576)
+
+[node name="Player" parent="." instance=ExtResource("1_ee6dv")]
+position = Vector2(447, 485)
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+zoom = Vector2(0.61, 0.61)
