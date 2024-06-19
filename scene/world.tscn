@@ -21,7 +21,6 @@ gravity = 50
 jump_force = 1800
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
-visible = false
 position = Vector2(-478, -442)
 position_smoothing_enabled = true
 position_smoothing_speed = 1.0
@@ -41,13 +40,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="background" type="MeshInstance2D" parent="Player/Camera2D2"]
-visible = false
 modulate = Color(0.130028, 6.85888e-07, 0.656816, 1)
 self_modulate = Color(0.127784, 5.09029e-06, 0.57463, 1)
 z_index = -100
 z_as_relative = false
-position = Vector2(470, 22.0001)
-scale = Vector2(2732, 1824)
+position = Vector2(478, -38.0001)
+scale = Vector2(3072, 1856)
 mesh = SubResource("QuadMesh_dfpqx")
 
 [node name="Platform" parent="." instance=ExtResource("4_w0tq1")]
