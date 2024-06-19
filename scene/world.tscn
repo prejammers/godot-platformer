@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxnwli5lenjfn"]
+[gd_scene load_steps=5 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/Menu/pause_menu.tscn" id="3_ygyix"]
-[ext_resource type="PackedScene" path="res://scene/platform.tscn" id="4_w0tq1"]
-
-[sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
+[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ba1mv"]
 
@@ -15,34 +12,6 @@ script = ExtResource("1_gkxe2")
 [node name="Player" parent="." instance=ExtResource("1_aew1j")]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(478, 442)
-
-[node name="Camera2D2" type="Camera2D" parent="Player"]
-position = Vector2(-478, -442)
-position_smoothing_enabled = true
-position_smoothing_speed = 1.0
-
-[node name="Pause_Menu" parent="Player/Camera2D2" instance=ExtResource("3_ygyix")]
-visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 475.0
-offset_top = 322.0
-offset_right = 475.0
-offset_bottom = 322.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="background" type="MeshInstance2D" parent="Player/Camera2D2"]
-modulate = Color(0.130028, 6.85888e-07, 0.656816, 1)
-self_modulate = Color(0.127784, 5.09029e-06, 0.57463, 1)
-z_index = -100
-z_as_relative = false
-position = Vector2(470, 347)
-scale = Vector2(2732, 1704)
-mesh = SubResource("QuadMesh_dfpqx")
 
 [node name="Platform" parent="." instance=ExtResource("4_w0tq1")]
 
