@@ -1,17 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxnwli5lenjfn"]
-
-[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
-[ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
-[gd_scene load_steps=8 format=3 uid="uid://bxnwli5lenjfn"]
+[gd_scene load_steps=11 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
 [ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_ygyix"]
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/bridge_segment.tscn" id="5_1bvst"]
+[ext_resource type="PackedScene" path="res://scene/wall.tscn" id="6_khiic"]
+[ext_resource type="PackedScene" path="res://scene/platform_medium.tscn" id="7_2p2iy"]
+[ext_resource type="PackedScene" path="res://scene/platform_small.tscn" id="8_wtkdw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
+
 [sub_resource type="QuadMesh" id="QuadMesh_ba1mv"]
 
 [node name="World" type="Node2D"]
@@ -44,8 +43,8 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="background" type="MeshInstance2D" parent="Player/Camera2D2"]
-modulate = Color(0.130028, 6.85888e-07, 0.656816, 1)
-self_modulate = Color(0.127784, 5.09029e-06, 0.57463, 1)
+modulate = Color(0.0784314, 0, 0.792157, 1)
+self_modulate = Color(0.0782461, 0, 0.790355, 1)
 z_index = -100
 z_as_relative = false
 position = Vector2(478, -38.0001)
@@ -111,6 +110,57 @@ position = Vector2(4864, 64)
 [node name="Platform9" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(6912, 64)
 
+[node name="Platform12" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(8704, 2624)
+
+[node name="Platform16" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(7680, 2624)
+
+[node name="Platform17" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(6656, 2624)
+
+[node name="Platform18" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(5632, 2624)
+
+[node name="Platform19" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(4608, 2624)
+
+[node name="Platform20" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(3584, 2624)
+
+[node name="Platform21" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(2560, 2624)
+
+[node name="Platform22" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(1536, 2624)
+
+[node name="Platform23" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(512, 2624)
+
+[node name="Platform33" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(-768, 1088)
+
+[node name="Platform44" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(256, 1600)
+
+[node name="Platform28" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(7168, 2112)
+
+[node name="Platform29" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(6144, 1600)
+
+[node name="Platform30" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(4608, 1600)
+
+[node name="Platform27" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(-512, 2624)
+
+[node name="Platform13" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(9728, 2624)
+
+[node name="Platform10" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(10368, -448)
+
 [node name="Platform11" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(4608, 576)
 
@@ -122,3 +172,74 @@ position = Vector2(6656, 576)
 
 [node name="Bridge_Segment3" parent="." instance=ExtResource("5_1bvst")]
 position = Vector2(7680, 576)
+
+[node name="Bridge_Segment4" parent="." instance=ExtResource("5_1bvst")]
+position = Vector2(9856, 576)
+
+[node name="Bridge_Segment5" parent="." instance=ExtResource("5_1bvst")]
+position = Vector2(10368, 576)
+
+[node name="Bridge_Segment7" parent="." instance=ExtResource("5_1bvst")]
+position = Vector2(10368, -192)
+
+[node name="Bridge_Segment8" parent="." instance=ExtResource("5_1bvst")]
+position = Vector2(10368, 64)
+
+[node name="Bridge_Segment9" parent="." instance=ExtResource("5_1bvst")]
+position = Vector2(10368, 320)
+
+[node name="Platform8" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(10304, 1920)
+
+[node name="Platform32" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(10304, 2432)
+
+[node name="Platform14" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(10304, 1408)
+
+[node name="Platform15" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(10304, 896)
+
+[node name="Platform24" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-1088, 2432)
+
+[node name="Platform34" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(-1792, 1600)
+
+[node name="Platform35" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(-1280, 2112)
+
+[node name="Platform25" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-1600, 1920)
+
+[node name="Platform26" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 1408)
+
+[node name="Platform36" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 896)
+
+[node name="Platform37" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 384)
+
+[node name="Platform38" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, -128)
+
+[node name="Platform39" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(3584, 1280)
+
+[node name="Platform31" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(7673.07, 575.619)
+
+[node name="Platform" parent="Platform31" instance=ExtResource("8_wtkdw")]
+
+[node name="Platform40" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(2944, 1280)
+
+[node name="Platform41" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(2432, 1280)
+
+[node name="Platform42" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(1920, 1280)
+
+[node name="Platform43" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(1408, 1280)
