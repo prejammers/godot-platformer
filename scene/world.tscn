@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_ygyix"]
+[ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/Menu/pause_menu.tscn" id="3_ygyix"]
 [ext_resource type="PackedScene" path="res://scene/platform.tscn" id="4_w0tq1"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
