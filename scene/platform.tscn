@@ -7,10 +7,11 @@ size = Vector2(1000, 150)
 size = Vector2(1024, 128)
 
 [node name="Platform" type="StaticBody2D"]
+position = Vector2(576, 576)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(6.10352e-05, -0.00012207)
+position = Vector2(9.53674e-06, 9.05991e-06)
 scale = Vector2(1.024, 0.853333)
 mesh = SubResource("QuadMesh_3bwms")
 
