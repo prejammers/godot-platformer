@@ -1,26 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bxnwli5lenjfn"]
+[gd_scene load_steps=3 format=3 uid="uid://bxnwli5lenjfn"]
 
-[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="3_2t2et"]
-
-[sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
+[ext_resource type="PackedScene" uid="uid://bpb088hs13n02" path="res://scene/levels/test_level.tscn" id="2_3xcd8"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_gkxe2")
 
-[node name="Player" parent="." instance=ExtResource("1_aew1j")]
-self_modulate = Color(0, 0, 0, 1)
-position = Vector2(512, 448)
-
-[node name="background" type="MeshInstance2D" parent="Player"]
-modulate = Color(0.0784314, 0, 0.792157, 1)
-self_modulate = Color(0.0782461, 0, 0.790355, 1)
-z_index = -100
-z_as_relative = false
-position = Vector2(0, -512)
-scale = Vector2(3072, 1856)
-mesh = SubResource("QuadMesh_dfpqx")
-
-[node name="Platform" parent="." instance=ExtResource("3_2t2et")]
-position = Vector2(512, 576)
+[node name="TestLevel" parent="." instance=ExtResource("2_3xcd8")]

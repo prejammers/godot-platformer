@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bpb088hs13n02"]
+[gd_scene load_steps=9 format=3 uid="uid://bpb088hs13n02"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_ee6dv"]
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_n01at"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="3_8wofq"]
 [ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="4_c3o8s"]
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_0a4j5"]
+[ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
@@ -204,3 +205,6 @@ position = Vector2(447, 485)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 zoom = Vector2(0.61, 0.61)
+
+[node name="Mothman" parent="." instance=ExtResource("7_hse2v")]
+position = Vector2(10112, -704)
