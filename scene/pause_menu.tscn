@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://chsx24ortjlhy"]
+[gd_scene load_steps=3 format=3 uid="uid://chsx24ortjlhy"]
 
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="1_fmuq7"]
+[ext_resource type="AudioStream" uid="uid://dm1v23iyhtlun" path="res://audio/menu sound.wav" id="2_cvw3i"]
 
 [node name="Pause_Menu" type="Control"]
 layout_mode = 3
@@ -37,6 +38,9 @@ text = "Resume"
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "Quit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_cvw3i")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

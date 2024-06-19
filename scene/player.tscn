@@ -4,21 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://b7kujf4q4cvul" path="res://icon.svg" id="1_ynbo7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3voon"]
-size = Vector2(128, 273)
+size = Vector2(128, 256.5)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_evnxh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 self_modulate = Color(0, 0, 0, 1)
-position = Vector2(0, -136)
-scale = Vector2(1, 2.15234)
+position = Vector2(0, -127.125)
+scale = Vector2(1, 2.01367)
 texture = ExtResource("1_ynbo7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -136)
+position = Vector2(0, -127.75)
 shape = SubResource("RectangleShape2D_3voon")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(2.08165e-12, -100)
-position_smoothing_enabled = true
+position = Vector2(0, -500)
+zoom = Vector2(0.46, 0.46)
