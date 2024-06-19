@@ -23,7 +23,11 @@ func _physics_process(delta):
 		jump_count += 1
 		
 	var horizontal_direction = Input.get_axis("move_left", "move_right")
-	velocity.x = speed * horizontal_direction
+	
+	if horizontal_direction:
+		velocity.x = speed * horizontal_direction
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
 	move_and_slide()
 	
 	if Input.is_action_just_pressed("Pause"):

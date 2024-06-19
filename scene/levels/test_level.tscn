@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="7_7at6j"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
 [ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://Assets/Car.png" id="8_hb8c0"]
+[ext_resource type="Texture2D" uid="uid://dtuqw0liriio7" path="res://Assets/gate.png" id="9_ja7w7"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
@@ -218,6 +219,12 @@ position = Vector2(10112, -704)
 position = Vector2(9664, 2496)
 rotation = 2.68257
 texture = ExtResource("8_hb8c0")
+
+[node name="Gate" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-676, 2472)
+scale = Vector2(11, 11)
+texture = ExtResource("9_ja7w7")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
