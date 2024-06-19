@@ -4,6 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://dm1v23iyhtlun" path="res://audio/menu sound.wav" id="2_cvw3i"]
 
 [node name="Pause_Menu" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

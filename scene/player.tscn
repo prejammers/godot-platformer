@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://i7acxieay1og"]
+[gd_scene load_steps=5 format=3 uid="uid://i7acxieay1og"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_evnxh"]
 [ext_resource type="Texture2D" uid="uid://b7kujf4q4cvul" path="res://icon.svg" id="1_ynbo7"]
+[ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_tnh6l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3voon"]
 size = Vector2(128, 256.5)
@@ -22,3 +23,13 @@ shape = SubResource("RectangleShape2D_3voon")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -500)
 zoom = Vector2(0.46, 0.46)
+<<<<<<< HEAD
+position_smoothing_enabled = true
+
+[node name="Pause_Menu" parent="Camera2D" instance=ExtResource("3_tnh6l")]
+offset_left = 2.0
+offset_top = -38.0
+offset_right = 2.0
+offset_bottom = -38.0
+=======
+>>>>>>> main
