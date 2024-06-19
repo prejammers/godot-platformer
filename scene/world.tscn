@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+[gd_scene load_steps=5 format=3 uid="uid://bxnwli5lenjfn"]
+
+[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
+[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
+=======
 [gd_scene load_steps=8 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
@@ -11,6 +18,7 @@
 
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
+>>>>>>> main
 
 [sub_resource type="QuadMesh" id="QuadMesh_ba1mv"]
 
@@ -24,6 +32,8 @@ speed = 500
 gravity = 50
 jump_force = 1800
 
+<<<<<<< HEAD
+=======
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position = Vector2(-478, -442)
 position_smoothing_enabled = true
@@ -52,6 +62,7 @@ position = Vector2(478, -38.0001)
 scale = Vector2(3072, 1856)
 mesh = SubResource("QuadMesh_dfpqx")
 
+>>>>>>> main
 [node name="Platform" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(512, 576)
 
