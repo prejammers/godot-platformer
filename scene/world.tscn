@@ -1,4 +1,10 @@
+
 [gd_scene load_steps=11 format=3 uid="uid://bxnwli5lenjfn"]
+
+[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
+[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
+[gd_scene load_steps=8 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
@@ -10,7 +16,6 @@
 [ext_resource type="PackedScene" path="res://scene/platform_small.tscn" id="8_wtkdw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
-
 [sub_resource type="QuadMesh" id="QuadMesh_ba1mv"]
 
 [node name="World" type="Node2D"]
