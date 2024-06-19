@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="3_8wofq"]
 [ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="4_c3o8s"]
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_0a4j5"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="7_7at6j"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
 [ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://Assets/Car.png" id="8_hb8c0"]
 [ext_resource type="Texture2D" uid="uid://dtuqw0liriio7" path="res://Assets/gate.png" id="9_ja7w7"]
@@ -224,3 +225,14 @@ texture_filter = 1
 position = Vector2(-676, 2472)
 scale = Vector2(11, 11)
 texture = ExtResource("9_ja7w7")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(0, -6.10352e-05)
+scale = Vector2(1.86667, 1.8963)
+texture = ExtResource("7_7at6j")
+centered = false

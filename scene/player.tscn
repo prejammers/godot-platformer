@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://i7acxieay1og"]
+[gd_scene load_steps=9 format=3 uid="uid://i7acxieay1og"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_evnxh"]
 [ext_resource type="Texture2D" uid="uid://b7kujf4q4cvul" path="res://icon.svg" id="1_ynbo7"]
 [ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_qpnxy"]
 [ext_resource type="PackedScene" uid="uid://bn022yv7qrljc" path="res://scene/level_select.tscn" id="4_5jd1q"]
 [ext_resource type="Script" path="res://scene/camera_target.gd" id="5_6rc0x"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="5_d5h6e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3voon"]
 size = Vector2(128, 256.5)
@@ -55,9 +56,13 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Camera2D"]
 visible = false
-position = Vector2(192, -433)
-scale = Vector2(-200.08, -219.775)
+z_index = -100
+z_as_relative = false
+position = Vector2(14, -20)
+rotation = 3.14159
+scale = Vector2(3727.89, 2152)
 mesh = SubResource("QuadMesh_jyn2x")
+texture = ExtResource("5_d5h6e")
 script = ExtResource("5_6rc0x")
