@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_ygyix"]
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/bridge_segment.tscn" id="5_1bvst"]
-[ext_resource type="PackedScene" path="res://scene/wall.tscn" id="6_khiic"]
-[ext_resource type="PackedScene" path="res://scene/platform_medium.tscn" id="7_2p2iy"]
-[ext_resource type="PackedScene" path="res://scene/platform_small.tscn" id="8_wtkdw"]
+[ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/wall.tscn" id="6_khiic"]
+[ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/platform_medium.tscn" id="7_2p2iy"]
+[ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/platform_small.tscn" id="8_wtkdw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
 
