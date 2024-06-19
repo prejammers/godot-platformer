@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxnwli5lenjfn"]
+[gd_scene load_steps=11 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/platform.tscn" id="4_w0tq1"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/bridge_segment.tscn" id="5_1bvst"]
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/wall.tscn" id="6_khiic"]
+[ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/platform_medium.tscn" id="7_2p2iy"]
+[ext_resource type="PackedScene" path="res://scene/platform_small.tscn" id="8_wtkdw"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
 
@@ -27,7 +29,6 @@ position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 
 [node name="Pause_Menu" parent="Player/Camera2D2" instance=ExtResource("3_ygyix")]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -135,11 +136,11 @@ position = Vector2(1536, 2624)
 [node name="Platform23" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(512, 2624)
 
-[node name="Platform25" parent="." instance=ExtResource("4_w0tq1")]
-position = Vector2(-2048, 1600)
-
 [node name="Platform33" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(-768, 1088)
+
+[node name="Platform44" parent="." instance=ExtResource("4_w0tq1")]
+position = Vector2(256, 1600)
 
 [node name="Platform28" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(7168, 2112)
@@ -149,12 +150,6 @@ position = Vector2(6144, 1600)
 
 [node name="Platform30" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(4608, 1600)
-
-[node name="Platform31" parent="." instance=ExtResource("4_w0tq1")]
-position = Vector2(2816, 1856)
-
-[node name="Platform26" parent="." instance=ExtResource("4_w0tq1")]
-position = Vector2(-1536, 2112)
 
 [node name="Platform27" parent="." instance=ExtResource("4_w0tq1")]
 position = Vector2(-512, 2624)
@@ -206,3 +201,44 @@ position = Vector2(10304, 896)
 
 [node name="Platform24" parent="." instance=ExtResource("6_khiic")]
 position = Vector2(-1088, 2432)
+
+[node name="Platform34" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(-1792, 1600)
+
+[node name="Platform35" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(-1280, 2112)
+
+[node name="Platform25" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-1600, 1920)
+
+[node name="Platform26" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 1408)
+
+[node name="Platform36" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 896)
+
+[node name="Platform37" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, 384)
+
+[node name="Platform38" parent="." instance=ExtResource("6_khiic")]
+position = Vector2(-2112, -128)
+
+[node name="Platform39" parent="." instance=ExtResource("7_2p2iy")]
+position = Vector2(3584, 1280)
+
+[node name="Platform31" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(7673.07, 575.619)
+
+[node name="Platform" parent="Platform31" instance=ExtResource("8_wtkdw")]
+
+[node name="Platform40" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(2944, 1280)
+
+[node name="Platform41" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(2432, 1280)
+
+[node name="Platform42" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(1920, 1280)
+
+[node name="Platform43" parent="." instance=ExtResource("8_wtkdw")]
+position = Vector2(1408, 1280)
