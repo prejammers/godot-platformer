@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpb088hs13n02"]
+[gd_scene load_steps=10 format=3 uid="uid://bpb088hs13n02"]
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_ee6dv"]
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_n01at"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="4_c3o8s"]
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_0a4j5"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="8_p31pi"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
@@ -208,3 +209,8 @@ zoom = Vector2(0.61, 0.61)
 
 [node name="Mothman" parent="." instance=ExtResource("7_hse2v")]
 position = Vector2(10112, -704)
+
+[node name="Car" type="Sprite2D" parent="."]
+position = Vector2(9728, 2560)
+rotation = -3.44703
+texture = ExtResource("8_p31pi")
