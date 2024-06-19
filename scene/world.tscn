@@ -2,7 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_aew1j"]
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
+
 [ext_resource type="PackedScene" uid="uid://bpb088hs13n02" path="res://scene/levels/test_level.tscn" id="3_vm554"]
+
 
 [sub_resource type="QuadMesh" id="QuadMesh_dfpqx"]
 
@@ -26,3 +28,4 @@ scale = Vector2(3072, 1856)
 mesh = SubResource("QuadMesh_dfpqx")
 
 [node name="TestLevel" parent="." instance=ExtResource("3_vm554")]
+
