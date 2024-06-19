@@ -7,6 +7,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
-	if player.horizontal_direction > 1:
-		move_local_x(+10)
+	pass
