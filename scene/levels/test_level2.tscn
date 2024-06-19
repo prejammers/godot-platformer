@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://chqwikp4dwoh3"]
+
+[ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_8uxe2"]
+[ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_xmu8y"]
+[ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/level_blocks/bridge_segment.tscn" id="2_7yor0"]
+[ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="2_p1cd1"]
+[ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="3_hcjg3"]
+[ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="5_6nytb"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_xmu8y")]
+
+[node name="Camera2D2" type="Camera2D" parent="Player"]
+position = Vector2(-24, 372)
+zoom = Vector2(0.425, 0.425)
+
+[node name="Platform33" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(-448, 448)
+
+[node name="Platform34" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(512, 448)
+
+[node name="Platform" parent="." instance=ExtResource("2_p1cd1")]
+position = Vector2(2048, 448)
+
+[node name="Platform2" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(1408, 448)
+
+[node name="Bridge_Segment" parent="." instance=ExtResource("2_7yor0")]
+position = Vector2(3072, 448)
+
+[node name="Platform3" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-896, 1856)
