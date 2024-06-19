@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bldre7rrred8k"]
+
+[ext_resource type="Texture2D" uid="uid://cq3d6hwpd8mgv" path="res://assets/mothman.png" id="1_76f85"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_0a6rb"]
+
+[node name="Mothman" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+rotation = -3.14159
+scale = Vector2(512, 512)
+mesh = SubResource("QuadMesh_0a6rb")
+texture = ExtResource("1_76f85")
