@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://chsx24ortjlhy" path="res://scene/pause_menu.tscn" id="3_qpnxy"]
 [ext_resource type="PackedScene" uid="uid://bn022yv7qrljc" path="res://scene/level_select.tscn" id="4_5jd1q"]
 [ext_resource type="Script" path="res://scene/camera_target.gd" id="5_6rc0x"]
-[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="5_d5h6e"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://Assets/dusk.png" id="5_d5h6e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3voon"]
 size = Vector2(128, 256.5)
