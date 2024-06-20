@@ -15,8 +15,10 @@ func _physics_process(delta):
 		velocity.y += gravity
 		if velocity.y > 1000:
 			velocity.y = 1000
+			
 	
 	if is_on_floor():
+		
 		jump_count = 0
 	if Input.is_action_just_pressed("jump") && jump_count < max_jumps:
 		velocity.y = -jump_force
