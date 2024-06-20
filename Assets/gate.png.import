@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtuqw0liriio7"
-path="res://.godot/imported/gate.png-2f3896339d527e221c36b255ce052f75.ctex"
+path="res://.godot/imported/gate.png-0ec0ab8bef0b6a95252524ee30e48c98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gate.png"
-dest_files=["res://.godot/imported/gate.png-2f3896339d527e221c36b255ce052f75.ctex"]
+source_file="res://Assets/gate.png"
+dest_files=["res://.godot/imported/gate.png-0ec0ab8bef0b6a95252524ee30e48c98.ctex"]
 
 [params]
 
