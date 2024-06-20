@@ -24,4 +24,5 @@ shape = SubResource("RectangleShape2D_tka37")
 one_shot = true
 
 [connection signal="body_entered" from="PlayerDetect" to="." method="_on_player_detect_body_entered"]
+[connection signal="body_exited" from="PlayerDetect" to="." method="_on_player_detect_body_exited"]
 [connection signal="timeout" from="ChangeSceneTimer" to="." method="_on_change_scene_timer_timeout"]
