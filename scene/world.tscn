@@ -1,10 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://dfjb6b7kpepo" path="res://scene/levels/level_1.tscn" id="2_cx4ik"]
+[ext_resource type="PackedScene" uid="uid://fnukbrxj423e" path="res://scene/levels/car_scene.tscn" id="2_ydh2g"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_gkxe2")
 
-[node name="level_1" parent="." instance=ExtResource("2_cx4ik")]
-position = Vector2(3642.8, 1280.59)
+[node name="level_1" parent="." instance=ExtResource("2_ydh2g")]

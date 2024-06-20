@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="3_8wofq"]
 [ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="4_c3o8s"]
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_0a4j5"]
-[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://Assets/dusk.png" id="7_7at6j"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="7_7at6j"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
-[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://Assets/Car.png" id="8_hb8c0"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="8_hb8c0"]
 [ext_resource type="PackedScene" uid="uid://cpxiyo50haeyo" path="res://scene/level_blocks/gate.tscn" id="10_8sp5p"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
