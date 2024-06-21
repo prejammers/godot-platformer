@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfhm2egn17rwa"
-path="res://.godot/imported/dusk.png-28411560f9ddf6bad7e1a1f8cd83cfba.ctex"
+uid="uid://b12pifux5f8pl"
+path="res://.godot/imported/Mothman Totem.png-2cd28b45d1861960757af27f90ec349a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/dusk.png"
-dest_files=["res://.godot/imported/dusk.png-28411560f9ddf6bad7e1a1f8cd83cfba.ctex"]
+source_file="res://Assets/Mothman Totem.png"
+dest_files=["res://.godot/imported/Mothman Totem.png-2cd28b45d1861960757af27f90ec349a.ctex"]
 
 [params]
 
