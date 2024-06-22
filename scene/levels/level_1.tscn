@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_tutts"]
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="6_fgb06"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_ral8f"]
-[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="10_7nf2l"]
-[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="10_55wml"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://Assets/Car.png" id="10_7nf2l"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://Assets/dusk.png" id="10_55wml"]
 [ext_resource type="PackedScene" uid="uid://cpxiyo50haeyo" path="res://scene/level_blocks/gate.tscn" id="10_ur56h"]
 [ext_resource type="PackedScene" uid="uid://copl5q6pxy0ua" path="res://scene/level_blocks/stick_1.tscn" id="11_ctwpv"]
 
