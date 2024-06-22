@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://p1ljaur57ff1" path="res://assets/gate.png" id="2_4nlk8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tka37"]
-size = Vector2(331, 263)
+size = Vector2(331, 255.25)
 
 [node name="Gate" type="Node2D"]
 script = ExtResource("1_iwtdr")
@@ -17,12 +17,7 @@ texture = ExtResource("2_4nlk8")
 [node name="PlayerDetect" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect"]
-position = Vector2(-21.5, -33.5)
 shape = SubResource("RectangleShape2D_tka37")
-
-[node name="ChangeSceneTimer" type="Timer" parent="."]
-one_shot = true
 
 [connection signal="body_entered" from="PlayerDetect" to="." method="_on_player_detect_body_entered"]
 [connection signal="body_exited" from="PlayerDetect" to="." method="_on_player_detect_body_exited"]
-[connection signal="timeout" from="ChangeSceneTimer" to="." method="_on_change_scene_timer_timeout"]

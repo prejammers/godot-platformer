@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ttenenlghlb2"
-path="res://.godot/imported/Crate.png-ca7dcd5b754df0701e3f514784eef66e.ctex"
+uid="uid://c24c3maq7y8oq"
+path="res://.godot/imported/stick2.png-395b62bf6fdeaf0b10e6d423ef5e803a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Crate.png"
-dest_files=["res://.godot/imported/Crate.png-ca7dcd5b754df0701e3f514784eef66e.ctex"]
+source_file="res://assets/sticks/stick2.png"
+dest_files=["res://.godot/imported/stick2.png-395b62bf6fdeaf0b10e6d423ef5e803a.ctex"]
 
 [params]
 
