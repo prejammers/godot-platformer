@@ -12,6 +12,7 @@
 [node name="TestLevel" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_xmu8y")]
+position = Vector2(0, 372)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position = Vector2(-24, 372)
