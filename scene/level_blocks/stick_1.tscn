@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://copl5q6pxy0ua"]
 
 [ext_resource type="Script" path="res://scripts/stick_1.gd" id="1_h16sx"]
-[ext_resource type="Texture2D" uid="uid://b6hf3nkecunb8" path="res://assets/sticks/stick1.png" id="1_nqmyf"]
+[ext_resource type="Texture2D" uid="uid://b6hf3nkecunb8" path="res://Assets/sticks/stick1.png" id="1_nqmyf"]
 
 [sub_resource type="Gradient" id="Gradient_ouhwp"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
@@ -19,9 +19,11 @@ size = Vector2(191.875, 191)
 script = ExtResource("1_h16sx")
 
 [node name="stickSprite" type="Sprite2D" parent="."]
+self_modulate = Color(1.5, 4.142, 1.5, 1)
 texture = ExtResource("1_nqmyf")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+visible = false
 scale = Vector2(2.98438, 2.98438)
 energy = 16.0
 texture = SubResource("GradientTexture2D_vnbm0")
