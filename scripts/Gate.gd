@@ -7,9 +7,11 @@ extends Node2D
 @onready var change_scene_timer = $ChangeSceneTimer
 var player_in_portal = false
 
+
 #checks if the body that overlaps characterbody2d with the name Player
 func _on_player_detect_body_entered(body):
-	if body.name == "Player":
+	var player = get_parent().get_node("Player")
+	if body.name == "Player" && player.hasKey:
 		player_in_portal = true
 		#change_scene_timer.start()
 #tried calling function normally gives error now calls func after delta is finished

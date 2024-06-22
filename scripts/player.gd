@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var pause_menu = $Camera2D/Pause_Menu
 @onready var level_select = $"Camera2D/Level Select"
 var jump_count = 0
+var hasKey = false
 var paused = false
 var leveled = false
 
