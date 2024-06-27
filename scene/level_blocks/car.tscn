@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwf5jy8l2wntj"]
+[gd_scene load_steps=7 format=3 uid="uid://bwf5jy8l2wntj"]
 
 [ext_resource type="Script" path="res://scripts/car_scene.gd" id="1_6vir8"]
 [ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="1_kaq64"]
+[ext_resource type="AudioStream" uid="uid://7ypvpcybm7vb" path="res://audio/car ignition and idle.wav" id="3_jo6u4"]
+[ext_resource type="AudioStream" uid="uid://b1taq2r7j1vab" path="res://audio/car skid.wav" id="3_tg13l"]
+[ext_resource type="Script" path="res://scene/level_blocks/AudioStreamPlayer2D.gd" id="4_ch0du"]
+[ext_resource type="AudioStream" uid="uid://bkdhd1xqqprip" path="res://audio/car crash.wav" id="5_viwqc"]
 
 [node name="Car" type="Node2D"]
 script = ExtResource("1_6vir8")
@@ -14,3 +18,14 @@ texture = ExtResource("1_kaq64")
 zoom = Vector2(0.35, 0.35)
 limit_right = 11392
 limit_bottom = 2900
+
+[node name="CarSkid" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_tg13l")
+script = ExtResource("4_ch0du")
+
+[node name="CarIgnition" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jo6u4")
+script = ExtResource("4_ch0du")
+
+[node name="CarCrash" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_viwqc")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://fnukbrxj423e"]
+[gd_scene load_steps=13 format=3 uid="uid://fnukbrxj423e"]
 
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_gplda"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/level_blocks/bridge_segment.tscn" id="2_5sg5l"]
@@ -8,7 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_b7ugi"]
 [ext_resource type="Texture2D" uid="uid://p1ljaur57ff1" path="res://assets/gate.png" id="8_cctek"]
 [ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="9_5e7ng"]
+[ext_resource type="AudioStream" uid="uid://dp50xdu7n5nji" path="res://audio/rain and thunder.wav" id="10_qqqlm"]
 [ext_resource type="PackedScene" uid="uid://bwf5jy8l2wntj" path="res://scene/level_blocks/car.tscn" id="10_whkjj"]
+[ext_resource type="Script" path="res://scene/levels/SoundLoop.gd" id="11_7vkmn"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
@@ -302,3 +304,7 @@ centered = false
 
 [node name="Car" parent="." instance=ExtResource("10_whkjj")]
 position = Vector2(-5504, 320)
+
+[node name="Rain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_qqqlm")
+script = ExtResource("11_7vkmn")
