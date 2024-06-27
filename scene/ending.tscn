@@ -1,9 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://bteh5sx7hotbf"]
-
-[ext_resource type="Script" path="res://scripts/world.gd" id="1_vaa5p"]
-[ext_resource type="PackedScene" uid="uid://fnukbrxj423e" path="res://scene/levels/car_scene.tscn" id="2_1ejdv"]
-
-[node name="World" type="Node2D"]
-script = ExtResource("1_vaa5p")
-
-[node name="level_1" parent="." instance=ExtResource("2_1ejdv")]
