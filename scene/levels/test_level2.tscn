@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://chqwikp4dwoh3"]
+[gd_scene load_steps=9 format=3 uid="uid://chqwikp4dwoh3"]
 
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_8uxe2"]
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="1_xmu8y"]
@@ -6,17 +6,20 @@
 [ext_resource type="PackedScene" uid="uid://chndemworxmef" path="res://scene/level_blocks/platform_medium.tscn" id="2_p1cd1"]
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="3_hcjg3"]
 [ext_resource type="PackedScene" uid="uid://d1uaqujon5w76" path="res://scene/level_blocks/wall.tscn" id="5_6nytb"]
+[ext_resource type="PackedScene" uid="uid://copl5q6pxy0ua" path="res://scene/level_blocks/stick_1.tscn" id="7_cf0kt"]
+[ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="8_fhtwu"]
 
 [node name="TestLevel" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_xmu8y")]
+position = Vector2(0, 372)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 position = Vector2(-24, 372)
 zoom = Vector2(0.425, 0.425)
 
 [node name="Platform33" parent="." instance=ExtResource("1_8uxe2")]
-position = Vector2(-448, 448)
+position = Vector2(-320, 448)
 
 [node name="Platform34" parent="." instance=ExtResource("1_8uxe2")]
 position = Vector2(512, 448)
@@ -31,4 +34,169 @@ position = Vector2(1408, 448)
 position = Vector2(3072, 448)
 
 [node name="Platform3" parent="." instance=ExtResource("5_6nytb")]
-position = Vector2(-896, 1856)
+position = Vector2(-832, 1664)
+
+[node name="Platform4" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(1664, 2880)
+
+[node name="Platform5" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(704, 2880)
+
+[node name="Platform6" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(-256, 2880)
+
+[node name="Wall" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3520, 768)
+
+[node name="Wall2" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 256)
+
+[node name="Wall3" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 768)
+
+[node name="Wall4" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 1280)
+
+[node name="Wall5" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 1792)
+
+[node name="Wall6" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 2304)
+
+[node name="Wall7" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, 2688)
+
+[node name="Platform7" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(2624, 2880)
+
+[node name="Platform8" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(3456, 2880)
+
+[node name="Wall8" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, 2176)
+
+[node name="Wall9" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, 2688)
+
+[node name="Platform9" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(-384, 1664)
+
+[node name="Platform10" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(448, 1664)
+
+[node name="Platform11" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(1280, 1664)
+
+[node name="Platform12" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(2304, 1664)
+
+[node name="Platform13" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(3008, 1664)
+
+[node name="Wall10" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3520, 1256)
+
+[node name="Wall11" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3520, 1472)
+
+[node name="Platform14" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3328, 2368)
+
+[node name="Platform15" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(2368, 1088)
+
+[node name="Platform16" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(1344, 1024)
+
+[node name="Platform17" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(1792, 1344)
+
+[node name="Wall12" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, 640)
+
+[node name="Wall13" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, 1152)
+
+[node name="Wall15" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, 128)
+
+[node name="Wall16" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -384)
+
+[node name="Wall17" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -896)
+
+[node name="Wall18" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -1408)
+
+[node name="Platform18" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3904, 2048)
+
+[node name="Platform19" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3520, 1472)
+
+[node name="Platform20" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3904, 832)
+
+[node name="Wall19" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -192)
+
+[node name="Wall20" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -640)
+
+[node name="Wall21" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -1152)
+
+[node name="stick_1" parent="." instance=ExtResource("7_cf0kt")]
+position = Vector2(-569, 2654)
+
+[node name="Platform21" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3840, -320)
+
+[node name="Platform22" parent="." instance=ExtResource("3_hcjg3")]
+position = Vector2(3840, -1024)
+
+[node name="Platform23" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(2880, -1600)
+
+[node name="Platform24" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(1856, -1600)
+
+[node name="Platform25" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(832, -1600)
+
+[node name="Platform26" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(-192, -1600)
+
+[node name="Platform27" parent="." instance=ExtResource("1_8uxe2")]
+position = Vector2(-384, -1600)
+
+[node name="Wall14" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -1664)
+
+[node name="Wall22" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -2176)
+
+[node name="Wall23" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -2688)
+
+[node name="Wall24" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(3904, -3200)
+
+[node name="Wall25" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -1920)
+
+[node name="Wall26" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -2432)
+
+[node name="Wall27" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -2944)
+
+[node name="Wall28" parent="." instance=ExtResource("5_6nytb")]
+position = Vector2(-832, -3456)
+
+[node name="Platform28" parent="." instance=ExtResource("2_p1cd1")]
+position = Vector2(-1152, -2112)
+
+[node name="Mothman" parent="." instance=ExtResource("8_fhtwu")]
+position = Vector2(-1088, -2432)

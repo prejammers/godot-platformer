@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxnwli5lenjfn"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_gkxe2"]
-[ext_resource type="PackedScene" uid="uid://bpb088hs13n02" path="res://scene/levels/test_level.tscn" id="2_3xcd8"]
+[ext_resource type="PackedScene" uid="uid://fnukbrxj423e" path="res://scene/levels/car_scene.tscn" id="2_ydh2g"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_gkxe2")
 
-[node name="TestLevel" parent="." instance=ExtResource("2_3xcd8")]
+[node name="level_1" parent="." instance=ExtResource("2_ydh2g")]

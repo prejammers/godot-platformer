@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwf5jy8l2wntj"]
+
+[ext_resource type="Script" path="res://scripts/car_scene.gd" id="1_6vir8"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="1_kaq64"]
+
+[node name="Car" type="Node2D"]
+script = ExtResource("1_6vir8")
+next_scene_path = "res://scene/levels/level_1.tscn"
+
+[node name="car_sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_kaq64")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.35, 0.35)
+limit_right = 11392
+limit_bottom = 2900
