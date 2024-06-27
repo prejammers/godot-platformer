@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://7u01pk8s0utp"]
+
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="1_jpfgf"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(0, -6.10352e-05)
+scale = Vector2(1.86667, 1.8963)
+texture = ExtResource("1_jpfgf")
+centered = false

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctnv4ulrghcqa"]
+
+[ext_resource type="PackedScene" uid="uid://7u01pk8s0utp" path="res://scene/levels/parallax_background.tscn" id="1_8qkno"]
+[ext_resource type="Texture2D" uid="uid://cq3d6hwpd8mgv" path="res://assets/mothman.png" id="2_w4ycc"]
+[ext_resource type="Script" path="res://scripts/Mothman_zoom.gd" id="3_qcivn"]
+[ext_resource type="PackedScene" uid="uid://bifa2i42nrml7" path="res://scene/UI/quit.tscn" id="4_gois0"]
+
+[node name="EndScene" type="Node2D"]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_8qkno")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 64)
+texture = ExtResource("2_w4ycc")
+script = ExtResource("3_qcivn")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Quit" parent="." instance=ExtResource("4_gois0")]
+visible = false
+offset_left = -562.0
+offset_top = -35.0
+offset_right = -562.0
+offset_bottom = -35.0

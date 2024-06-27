@@ -319,7 +319,7 @@ centered = false
 
 [node name="Gate" parent="." instance=ExtResource("10_ur56h")]
 position = Vector2(832, 1216)
-next_scene_path = "res://scene/levels/test_level2.tscn"
+next_scene_path = "res://scene/end_scene.tscn"
 
 [node name="Car" type="Sprite2D" parent="."]
 position = Vector2(9792, 2368)
