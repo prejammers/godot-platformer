@@ -5,10 +5,12 @@ extends Node2D
 var cur_pos = Vector2(position.x, position.y)
 var bridge_ledge = Vector2(8064, 320)
 var crash_site = Vector2(9756, 2368)
+var playedCrash = 0;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$CarIgnition.play()# Replace with function body.
+	$CarSkid.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

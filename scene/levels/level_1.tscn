@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dfjb6b7kpepo"]
+[gd_scene load_steps=18 format=3 uid="uid://dfjb6b7kpepo"]
 
 [ext_resource type="PackedScene" uid="uid://c7g3bxbcui3f7" path="res://scene/level_blocks/platform.tscn" id="1_l6nvb"]
 [ext_resource type="PackedScene" uid="uid://bu7b7cqf8us8e" path="res://scene/level_blocks/bridge_segment.tscn" id="2_wvhfx"]
@@ -7,10 +7,14 @@
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_tutts"]
 [ext_resource type="PackedScene" uid="uid://i7acxieay1og" path="res://scene/player.tscn" id="6_fgb06"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_ral8f"]
-[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://Assets/Car.png" id="10_7nf2l"]
-[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://Assets/dusk.png" id="10_55wml"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="10_7nf2l"]
+[ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="10_55wml"]
 [ext_resource type="PackedScene" uid="uid://cpxiyo50haeyo" path="res://scene/level_blocks/gate.tscn" id="10_ur56h"]
 [ext_resource type="PackedScene" uid="uid://copl5q6pxy0ua" path="res://scene/level_blocks/stick_1.tscn" id="11_ctwpv"]
+[ext_resource type="AudioStream" uid="uid://bkdhd1xqqprip" path="res://audio/car crash.wav" id="11_od2sd"]
+[ext_resource type="Script" path="res://scene/levels/CarCrash.gd" id="12_d0fep"]
+[ext_resource type="AudioStream" uid="uid://c7ry14qucd21r" path="res://audio/piano loop.wav" id="14_anv5e"]
+[ext_resource type="Script" path="res://scene/levels/SoundLoop.gd" id="15_176dl"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_wv47f"]
 
@@ -322,8 +326,16 @@ position = Vector2(9792, 2368)
 rotation = 2.74017
 texture = ExtResource("10_7nf2l")
 
+[node name="CarCrash" type="AudioStreamPlayer2D" parent="Car"]
+stream = ExtResource("11_od2sd")
+script = ExtResource("12_d0fep")
+
 [node name="stick_1" parent="." instance=ExtResource("11_ctwpv")]
 position = Vector2(1792, 4928)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_hvg2o")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_anv5e")
+script = ExtResource("15_176dl")
