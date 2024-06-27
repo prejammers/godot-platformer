@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b12pifux5f8pl"
-path="res://.godot/imported/Mothman Totem.png-2cd28b45d1861960757af27f90ec349a.ctex"
+path="res://.godot/imported/Mothman Totem.png-686d86181d07d96c63000a750d39ba4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mothman Totem.png"
-dest_files=["res://.godot/imported/Mothman Totem.png-2cd28b45d1861960757af27f90ec349a.ctex"]
+source_file="res://assets/Mothman Totem.png"
+dest_files=["res://.godot/imported/Mothman Totem.png-686d86181d07d96c63000a750d39ba4f.ctex"]
 
 [params]
 

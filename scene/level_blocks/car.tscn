@@ -12,3 +12,5 @@ texture = ExtResource("1_kaq64")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.35, 0.35)
+limit_right = 11392
+limit_bottom = 2900
