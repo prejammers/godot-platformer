@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bg713hcmhw0fb" path="res://scene/level_blocks/platform_small.tscn" id="5_0a4j5"]
 [ext_resource type="Texture2D" uid="uid://bfhm2egn17rwa" path="res://assets/dusk.png" id="7_7at6j"]
 [ext_resource type="PackedScene" uid="uid://bldre7rrred8k" path="res://scene/level_blocks/Mothman.tscn" id="7_hse2v"]
+
 [ext_resource type="Texture2D" uid="uid://dr3dd8glv42x5" path="res://assets/Car.png" id="8_hb8c0"]
 [ext_resource type="PackedScene" uid="uid://cpxiyo50haeyo" path="res://scene/level_blocks/gate.tscn" id="10_8sp5p"]
 
@@ -216,6 +217,7 @@ zoom = Vector2(0.61, 0.61)
 position = Vector2(10112, -704)
 
 [node name="Car" type="Sprite2D" parent="."]
+
 position = Vector2(9664, 2496)
 rotation = 2.68257
 texture = ExtResource("8_hb8c0")
